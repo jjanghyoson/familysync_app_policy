@@ -10,10 +10,10 @@
 
 | 문서 | URL |
 |---|---|
-| 홈 | https://enterbong.github.io/familysync_app_policy/ |
-| 개인정보 처리방침 | https://enterbong.github.io/familysync_app_policy/privacy-policy.html |
-| 서비스 이용약관 | https://enterbong.github.io/familysync_app_policy/terms-of-service.html |
-| 계정 및 데이터 삭제 안내 | https://enterbong.github.io/familysync_app_policy/account-deletion.html |
+| 홈 | https://jjanghyoson.github.io/familysync_app_policy/ |
+| 개인정보 처리방침 | https://jjanghyoson.github.io/familysync_app_policy/privacy-policy.html |
+| 서비스 이용약관 | https://jjanghyoson.github.io/familysync_app_policy/terms-of-service.html |
+| 계정 및 데이터 삭제 안내 | https://jjanghyoson.github.io/familysync_app_policy/account-deletion.html |
 
 > **GitHub Pages가 아직 꺼져 있다면**: 저장소 **Settings > Pages**에서
 > Source를 **Deploy from a branch**, Branch를 **`main`**, 폴더를 **`/ (root)`** 로 선택하고 Save 하세요.
@@ -34,9 +34,11 @@ HTML은 스토어/앱 연결용 공개 페이지이고, Markdown은 동일 내�
 
 ## 문서 작성 기준
 
-- 2026-07-11 기준 앱 코드(`/workspace/family_sync`)와 README/docs를 분석해 **실제 기능·실제 수집 항목 기준**으로 작성했습니다.
+- 2026-08-27 기준 앱 코드(`/workspace/family_sync`)를 다시 대조해 **실제 기능·실제 수집 항목 기준**으로 갱신했습니다.
 - 앱이 수집하지 않는 정보(위치정보, 광고 식별자, 연락처 등)는 수집하지 않는다고 명시했습니다.
 - 위치 공유 기능은 보류(dormant, UI 비노출) 상태이며, 문서에는 "현재 위치정보를 수집하지 않음 + 향후 도입 시 별도 동의/정책 개정" 원칙으로 반영했습니다.
+- 기기 권한 표는 `android/app/src/main/AndroidManifest.xml`에 선언된 권한을 **하나도 빠짐없이** 옮긴 것입니다. 권한을 더하거나 뺄 때 개인정보 처리방침 9항도 함께 고쳐야 합니다.
+- 콘텐츠 번역(선택, 기본 꺼짐)은 문장을 Microsoft 번역 서비스로 보내므로 처리방침 2-9·7항에 위탁 사실을 적었습니다. 관련 코드는 `lib/features/personalization/application/user_content_translation.dart`와 `supabase/functions/translate-content/`입니다.
 
 ## 출시 전 운영 확인
 

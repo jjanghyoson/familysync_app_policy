@@ -51,3 +51,16 @@ HTML은 스토어/앱 연결용 공개 페이지이고, Markdown은 동일 내�
 ## 주의
 
 ⚠️ 실제 출시 전에 개인정보 처리 리전과 스토어 콘솔의 데이터 보안 응답을 최종 대조하세요.
+
+## Play 심사용 자료
+
+| 자료 | 주소 |
+|---|---|
+| 포그라운드 서비스(알람) 동작 영상 | https://jjanghyoson.github.io/familysync_app_policy/assets/play-review/foreground-service-alarm.mp4 |
+
+Play Console의 **앱 콘텐츠 > 포그라운드 서비스 권한** 선언은 해당 기능을 보여 주는
+동영상 링크를 요구한다. 유튜브 대신 이 저장소(GitHub Pages)에 두는 이유는,
+처방침과 같은 자리에서 함께 관리되고 링크가 계정 사정으로 사라지지 않기 때문이다.
+
+영상은 일정 알람을 설정하고 → 울리고 → 끄는 과정을 담는다.
+`AlarmRingService`가 `specialUse` 전경 서비스로 도는 근거 자료다.
